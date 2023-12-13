@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img"
-    tools:context="PdfAddActivity">
+    tools:context="PdfEditActivity">
 
     <!--Toolbar-->
     <RelativeLayout
@@ -44,27 +44,35 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-condensed"
-            android:text="Add a New Book"
+            android:text="Edit Book Info"
             android:textColor="@color/black"
             android:textSize="28sp"/>
-<ImageButton
-    android:id="@+id/attachPdfBtn"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/ic_attach_white"
-    android:layout_alignParentEnd="true"
-    android:layout_margin="10dp"
-    android:background="@android:color/transparent"
-    android:padding="5dp"/>
+        <ImageButton
+            android:id="@+id/attachPdfBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_attach_white"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"/>
 
     </RelativeLayout>
+    <ScrollView
+        android:layout_marginTop="225dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/titleTil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginTop="230dp"
         app:hintEnabled="false">
 
         <EditText
@@ -139,7 +147,9 @@
         android:layout_marginEnd="30dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/shape_button01"
-        android:text="Upload"
+        android:text="Update"
         android:textColor="@color/black"/>
 
 </RelativeLayout>
+</ScrollView>
+    </RelativeLayout>

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray01"
+    android:background="@drawable/img"
     tools:context="CategoryAddActivity">
 
     <!--Toolbar-->
@@ -47,7 +47,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-condensed"
             android:text="Add a New Category"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="28sp"/>
 
     </RelativeLayout>
@@ -89,6 +89,6 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/shape_button01"
         android:text="Submit"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
 
 </RelativeLayout>

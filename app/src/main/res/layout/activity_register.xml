@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray01"
+    android:background="@drawable/img"
     tools:context=".RegisterActivity">
 
     <!--Toolbar-->
@@ -21,7 +21,10 @@
             android:id="@+id/backBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@android:color/transparent"
             android:contentDescription="Back Button"
             android:padding="10dp"
@@ -42,7 +45,7 @@
             android:layout_below="@id/iconIv"
             android:layout_marginTop="10dp"
             android:text="Create New Account"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="sans-serif-condensed"
             android:textSize="28sp"
             android:layout_centerHorizontal="true"/>
@@ -175,7 +178,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/shape_button01"
                 android:text="Register"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
         </RelativeLayout>
 
     </ScrollView>

@@ -24,7 +24,7 @@
             android:layout_marginTop="8dp"
             android:text="Dashboard User"
             android:textStyle="bold"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/subTitleTv"
@@ -33,7 +33,7 @@
             android:layout_below="@id/titleTv"
             android:layout_centerHorizontal="true"
             android:text="abc@example.com"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
         <ImageButton
             android:id="@+id/logoutBtn"
@@ -49,5 +49,26 @@
             tools:ignore="TouchTargetSizeCheck" />
 
     </RelativeLayout>
+
+    <!--Onglets : Afficher les catégories de livres-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_margin="5dp"
+        app:tabIndicatorFullWidth="false"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabIndicatorHeight="0dp"
+        android:layout_below="@id/toolbarRL"
+        app:tabMode="scrollable"/>
+
+    <!--View Pager : Afficher les livres classés par fragments-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout"/>
 
 </RelativeLayout>
